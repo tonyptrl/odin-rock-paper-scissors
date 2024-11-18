@@ -7,9 +7,6 @@
 </head>
 <body>
   <script>
-    let humanScore = 0;
-    let computerScore = 0;
-
     function getComputerChoice() {
       let randomNumber = Math.random();
       if (randomNumber <= 0.350) {
@@ -39,7 +36,11 @@
 
     const humanSelection = getHumanChoice();
 
-    function playRound(humanChoice, computerChoice) {
+    function playGame() {
+      let humanScore = 0;
+      let computerScore = 0;
+
+      function playRound(humanChoice, computerChoice) {
       if(humanChoice === "rock" && computerChoice === "rock") {
         return console.log("Tied.");
       } else if (humanChoice === "rock" && computerChoice === "paper") {
@@ -68,6 +69,14 @@
     };
 
     playRound(humanSelection, computerSelection);
+    playRound(humanSelection, computerSelection);
+    playRound(humanSelection, computerSelection);
+    playRound(humanSelection, computerSelection);
+    playRound(humanSelection, computerSelection);
+
+    };
+
+    playGame();
   </script>
 </body>
 </html>
