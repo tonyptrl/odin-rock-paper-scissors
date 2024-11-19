@@ -9,13 +9,14 @@
   <script>
     function getComputerChoice() {
       let randomNumber = Math.random();
-      } if (randomNumber <= 0.350) {
+      if (randomNumber <= 0.350) {
         return "rock";
       } else if (randomNumber >= 0.351 && randomNumber <= 0.700) {
         return "paper";
       } else if (randomNumber >= 0.701 && randomNumber < 1) {
         return "scissors";
-      };
+      }
+    };
 
     const computerSelection = getComputerChoice();
 
