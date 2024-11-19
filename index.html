@@ -9,14 +9,13 @@
   <script>
     function getComputerChoice() {
       let randomNumber = Math.random();
-      if (randomNumber <= 0.350) {
+      } if (randomNumber <= 0.350) {
         return "rock";
       } else if (randomNumber >= 0.351 && randomNumber <= 0.700) {
         return "paper";
       } else if (randomNumber >= 0.701 && randomNumber < 1) {
         return "scissors";
-      }
-    };
+      };
 
     const computerSelection = getComputerChoice();
 
@@ -69,14 +68,14 @@
     };
 
     playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
 
     };
 
-    playGame();
+    for (let round = 1; round < 5; round++) {
+      playGame();
+      let computerSelection = getComputerChoice();
+      let humanSelection = getHumanChoice();
+    };
   </script>
 </body>
 </html>
